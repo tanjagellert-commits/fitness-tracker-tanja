@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 import { signOut } from './services/googleDrive';
-import { registerServiceWorker, scheduleReminder, cancelReminder } from './services/reminder';
 import Login from './components/Login';
 import HomeScreen from './components/HomeScreen';
 import UnitSelect from './components/UnitSelect';
@@ -13,9 +12,7 @@ export default function App() {
   const [selectedUnit, setSelectedUnit]   = useState(null);
   const [completedExercises, setCompletedExercises] = useState([]);
 
-  const handleLogin = useCallback(async (isManual = false) => {
-    await registerServiceWorker();
-    await scheduleReminder({ promptPermission: isManual });
+  const handleLogin = useCallback(async () => {
     setScreen('home');
   }, []);
 
@@ -48,7 +45,7 @@ export default function App() {
     return <ExerciseFlow unit={selectedUnit} onDone={handleExercisesDone} onBack={() => setScreen('unit-select')} />;
 
   if (screen === 'finish')
-    return <FinishScreen unit={selectedUnit} exercises={completedExercises} runData={null} onSaved={() => { cancelReminder(); setScreen('home'); }} onSessionExpired={() => setScreen('login')} />;
+    return <FinishScreen unit={selectedUnit} exercises={completedExercises} runData={null} onSaved={() => setScreen('home')} onSessionExpired={() => setScreen('login')} />;
 
   if (screen === 'settings')
     return <SettingsPanel onBack={() => setScreen('home')} onSignOut={handleSignOut} />;

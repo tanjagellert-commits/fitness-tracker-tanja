@@ -21,8 +21,7 @@ const UNITS = [
     label: 'Laufen',
     subtitle: 'Garmin trackt Details',
     icon: '🏃',
-    desc: 'Ab Schuhkauf · kurzes Log',
-    comingSoon: true,
+    desc: 'Sonntags · kurzes Log',
   },
 ];
 
