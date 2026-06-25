@@ -1,0 +1,83 @@
+export const EXERCISES = {
+  A: [
+    {
+      id: 'katze_kuh',
+      name: 'Katze-Kuh',
+      note: 'Auf allen Vieren – LWS mobilisieren, sanft',
+      duration: 120,
+      video: 'https://www.youtube.com/watch?v=KSMfBNH5Hm8',
+    },
+    {
+      id: 'kindshaltung',
+      name: 'Kindshaltung',
+      note: 'LWS entlasten, Hüfte öffnen',
+      duration: 120,
+      video: 'https://www.youtube.com/watch?v=KSMfBNH5Hm8',
+    },
+    {
+      id: 'cobra',
+      name: 'Cobra',
+      note: 'Auf Bauch – LWS strecken',
+      duration: 120,
+      video: null,
+    },
+    {
+      id: 'bird_dog',
+      name: 'Bird-Dog',
+      note: 'Auf allen Vieren – Core-Stabilität, schützt L5/S1',
+      duration: 180,
+      video: 'https://www.youtube.com/watch?v=ZE-XIVQK3RA',
+    },
+    {
+      id: 'hueftbeuger_kniend',
+      name: 'Hüftbeuger kniend',
+      note: 'Kniend – Hüftöffner, Hauptziel',
+      duration: 180,
+      video: 'https://www.youtube.com/watch?v=KSMfBNH5Hm8',
+    },
+    {
+      id: 'butterfly',
+      name: 'Butterfly',
+      note: 'Schmetterling – Hüftöffner innen',
+      duration: 180,
+      video: null,
+    },
+    {
+      id: '90_90_stretch',
+      name: '90/90-Stretch',
+      note: 'Außenrotation Hüfte',
+      duration: 180,
+      video: 'https://www.youtube.com/watch?v=j0gn9yaDsnY',
+    },
+  ],
+  B: [
+    {
+      id: 'piriformis',
+      name: 'Piriformis-Stretch',
+      note: 'Knöchel aufs Knie, vorbeugen – Sitzplatz',
+      duration: 90,
+      video: null,
+    },
+    {
+      id: 'hueftbeuger_sitzrand',
+      name: 'Hüftbeuger Sitzrand',
+      note: 'Ein Bein zurückschieben – Sitzplatz',
+      duration: 90,
+      video: null,
+    },
+    {
+      id: 'schulterblätter',
+      name: 'Schulterblätter',
+      note: 'Zusammenziehen, Haltung verbessern',
+      duration: 90,
+      video: null,
+    },
+    {
+      id: 'hueftkreisen',
+      name: 'Hüftkreisen & Beckenkippen',
+      note: 'Stehend im Gang oder WC-Bereich',
+      duration: 90,
+      video: null,
+    },
+  ],
+};
