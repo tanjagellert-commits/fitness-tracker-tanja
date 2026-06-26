@@ -59,11 +59,11 @@ export const EXERCISES = {
       video: 'https://www.youtube.com/watch?v=o8MzGcVBdno',
     },
     {
-      id: 'hueftbeuger_sitzrand',
-      name: 'Hüftbeuger Sitzrand',
-      note: 'An Sitzrand rutschen · ein Bein nach hinten hängen lassen · 45 Sek halten · spürt man im Hüftbeuger des hinteren Beins · Seite wechseln',
+      id: 'knie_heben',
+      name: 'Oberschenkel heben',
+      note: 'Abwechselnd Knie anheben wie Marschieren im Sitzen · 20× pro Seite · aktiviert Hüftbeuger + Bauch · funktioniert auf jedem Sitzplatz',
       duration: 90,
-      video: 'https://www.youtube.com/watch?v=N3D7ugRNVlY',
+      video: null,
     },
     {
       id: 'schulterblätter',
