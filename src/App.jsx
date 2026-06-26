@@ -24,7 +24,7 @@ export default function App() {
   const handleStartUnit = useCallback((unit) => {
     setSelectedUnit(unit);
     setCompletedExercises([]);
-    setScreen('exercise-flow');
+    setScreen(unit === 'C' ? 'finish' : 'exercise-flow');
   }, []);
 
   const handleExercisesDone = useCallback((exercises) => {
